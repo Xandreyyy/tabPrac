@@ -1,0 +1,35 @@
+:root{
+    --nav-menu-height: none;
+}
+
+#sectionMenu, .nav-wrapper, .nav-btns{
+    display: flex;
+}
+
+#sectionMenu, .nav-wrapper{
+    justify-content: center;
+}
+
+#sectionMenu{
+    min-height: var(--nav-menu-height);
+}
+
+.nav-wrapper{
+    position: relative;
+}
+
+.nav-btns{
+    column-gap: 0.8rem;
+    list-style: none;
+    position: absolute;
+}
+
+.nav-btns button{
+    padding: 0.6em;
+    width: 90px;
+}
+
+#sectionPrac{
+    width: 100%;
+    border: 1px solid black;
+}
