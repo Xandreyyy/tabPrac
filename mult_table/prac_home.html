@@ -6,7 +6,8 @@
     <title>TABPRAC - MULTIPLICAÇÃO</title>
     <link rel="stylesheet" href="../src/css/style.css">
     <link rel="stylesheet" href="../src/css/prac_home.css">
-    <script src="../src/js/prac_home.js" defer></script>
+    <script src="../src/js/prac_home.js" defer type="module"></script>
+    <script src="../src/js/Game.js" defer type="module"></script>
 </head>
 <body>
     <header>
@@ -15,20 +16,24 @@
     <section id="sectionMenu">
         <nav class="nav-wrapper">
             <ul class="nav-btns" id="diffs">
-                <li><button type="button" class="difficulty">LERDINHO</button></li>
-                <li><button type="button" class="difficulty">MÉDIO</button></li>
-                <li><button type="button" class="difficulty">NINJA</button></li>
+                <li><button type="button" class="difficulty" value="easy">LERDINHO</button></li>
+                <li><button type="button" class="difficulty" value="medium">MÉDIO</button></li>
+                <li><button type="button" class="difficulty" value="hard">NINJA</button></li>
             </ul>
             <ul class="nav-btns hide" id="gameModes">
-                <li><button type="button" class="mode">PADRÃO</button></li>
-                <li><button type="button" class="mode">OSREVER</button></li>
-                <li><button type="button" class="mode">TABELA²</button></li>
+                <li><button type="button" class="mode" value="default">PADRÃO</button></li>
+                <li><button type="button" class="mode" value="reverse">OSREVER</button></li>
+                <li><button type="button" class="mode" value="table">TABELA²</button></li>
             </ul>
         </nav>
     </section>
     <section id="sectionPrac">
         <h1>TESTE</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</br> Debitis fugiat minima vel assumenda repellendus soluta fuga cupiditate</br></p>
+        <div class="answer-wrapper">
+            <input type="text" id="escreverNum">
+            <button type="button" id="escreverNum1">ENVIAR</button>
+        </div>
     </section>
 </body>
 </html>
